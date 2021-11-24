@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import useSWR from 'swr';
 
 import styled from "styled-components";
-import { Button } from 'ui/buttons'
-import {List, ListItem} from 'classcomp/Present'
+import { Button } from 'ui/buttons';
+import {List, ListItem} from 'classcomp/Present';
 const Wrapper = styled.div`
   padding: 6rem 0 0;
   text-align: center;
