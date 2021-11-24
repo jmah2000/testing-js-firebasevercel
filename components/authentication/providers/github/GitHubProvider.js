@@ -11,6 +11,7 @@ function GitHubProvider({ children, ...props }) {
         <Image
           src={github}
           layout="fixed"
+          alt="githublogo"
           width={24}
           height={24}
           quality={30}
