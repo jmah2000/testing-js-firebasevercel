@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import { AppBar } from '../appbar'
+import { AppBar } from '../components/appbar'
 
 const Layout = styled.div`
     max-width: 460px;
