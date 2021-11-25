@@ -1,23 +1,16 @@
-import Image from "next/image";
- 
+import Image from 'next/image'
 import { ProviderButton } from "ui/buttons";
 import google from "./google.png";
 
 function GoogleProvider({ children,  ...props }) {
  
-   
-   
-   
- 
- 
 
   return (
-    <ProviderButton>
+    <ProviderButton >
       <div>
         <Image
           src={google}
           layout="fixed"
-          alt="googlelogo"
           width={24}
           height={24}
           quality={30}

@@ -11,7 +11,6 @@ function FaceBookProvider({ children, ...props }) {
         <Image
           src={facebook}
           layout="fixed"
-          alt="facebooklogo"
           width={24}
           height={24}
           quality={30}
