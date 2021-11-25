@@ -12,6 +12,15 @@ function UserLoginStatus({ size, color, status, ...props }) {
   // Conditional Render logged in
   const user = useAuth()
   const router = useRouter()
+  // logout click handler
+  function handleClick(){
+    signOut(auth)
+    .then(()=>{
+      // sign out clean up logic
+      router.pathname('/')
+    })
+
+  }
 
   if (user)
   {
@@ -26,7 +35,7 @@ function UserLoginStatus({ size, color, status, ...props }) {
 
   return (
     <LoginStatus>
-      <IoPersonCircleSharp size={size || "1.75rem"} />
+      <IoPersonCircleSharp size={size || "1.75rem"} color="red" />
       <figcaption>
         <p>Status</p>
         <p>please login</p>

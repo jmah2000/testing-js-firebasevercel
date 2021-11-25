@@ -12,7 +12,7 @@ function ToDoPage(props) {
       return (
       <>
       <AppBar/>
-      <Title>YOU'RE NOT WELCOMED GO AWAY</Title>
+      <Title>YOURE NOT WELCOMED GO AWAY</Title>
       </>
       )
     }

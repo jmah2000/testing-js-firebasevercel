@@ -12,6 +12,7 @@ import Login from "./styled"
 function UserLogin ({...props}){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const router = useRouter()
     const user = useAuth()
    
     async function handleSubmit(e){
