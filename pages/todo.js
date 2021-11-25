@@ -1,16 +1,28 @@
+
+import { useAuth } from "libs/hooks/useAuth";
 import { AppBar } from "components/appbar";
 import {Title} from "ui/title"
 
 
 function ToDoPage(props) {
    
+    const user = useAuth()
+    if (user)
+    {
+      return (
+      <>
+      <AppBar/>
+      <Title>YOU'RE NOT WELCOMED GO AWAY</Title>
+      </>
+      )
+    }
+
     return (
       <>
-        <AppBar />
-        <Title> Please Go Away</Title>
+      <AppBar/>
+      <Title>Render the uses to list</Title>
       </>
     )
-  
 }
 
 export default ToDoPage;
