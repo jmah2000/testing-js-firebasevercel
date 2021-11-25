@@ -11,13 +11,14 @@ function UserLogin ({...props}){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
    
-    function handleSubmit(e){
-        console.log(e)
+    async function handleSubmit(e){
+        e.preventDefault()
+        console.log(1)
     }
 
     return (
         <>
-        <Login {...props} onClick={(e)=>handleSubmit(e)} >    
+        <Login {...props} onSubmit={(e)=>handleSubmit(e)} >    
          <TextInput label="Email"  id="emailAddress" placeholder="janedoe@home.com" {...props}/>
          <TextInput label="Password"  type="password" id="emailAddress" placeholder="use a secure password" {...props}/>
     
