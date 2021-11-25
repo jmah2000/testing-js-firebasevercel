@@ -13,7 +13,10 @@ function UserLogin ({...props}){
    
     async function handleSubmit(e){
         e.preventDefault()
-        console.log(1)
+        const user = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
+        console.log(user)
+
+        
     }
 
     return (
