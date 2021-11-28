@@ -1,4 +1,4 @@
-import router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import {useState} from 'react'
 import {signInWithEmailAndPassword} from 'firebase/auth' 
 
@@ -19,6 +19,7 @@ function UserLogin ({...props}){
         e.preventDefault()
         const isValidUser = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
         //const isValidUser = await signInWithEmailAndPassword(auth, user, password)
+        console.log(isValidUser)
         if(isValidUser)
         {
             router.push('/todo')
