@@ -9,7 +9,7 @@ function ToDoPage(props) {
 
     console.log(user)
 
-    if (!user)
+    if (user)
     {
       return (
       <>
