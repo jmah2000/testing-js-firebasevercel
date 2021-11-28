@@ -23,7 +23,7 @@ function ToDoPage(props) {
       return (
         <>
         <AppBar/>
-        <Title>Render the users to list</Title>
+        <Title>Render the users todo list</Title>
         </>
       )
     }
