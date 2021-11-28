@@ -17,7 +17,8 @@ function UserLogin ({...props}){
    
     async function handleSubmit(e){
         e.preventDefault()
-        const isValidUser = await signInWithEmailAndPassword(auth, user, password)
+        const user = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
+        //const isValidUser = await signInWithEmailAndPassword(auth, user, password)
         if(isValidUser)
         {
             router.push('/todo')
