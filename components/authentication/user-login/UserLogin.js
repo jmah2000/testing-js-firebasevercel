@@ -20,9 +20,6 @@ function UserLogin ({...props}){
         // const isValidUser = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
         const isValidUser = await signInWithEmailAndPassword(auth, email, password)
 
-        console.log("UserLogin - user")
-        console.log(user)
-
         if(isValidUser)
         {
             router.push('/todo')

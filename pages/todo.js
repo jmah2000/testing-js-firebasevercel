@@ -10,7 +10,7 @@ function ToDoPage(props) {
     console.log("todo.js - user")
     console.log(user)
 
-    if (user)
+    if (!user)
     {
       return (
       <>
