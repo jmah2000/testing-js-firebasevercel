@@ -6,7 +6,7 @@ import {Title} from "ui/title"
 function ToDoPage(props) {
    
     const user = useAuth()
-    if (user)
+    if (!user)
     {
       return (
       <>
@@ -19,7 +19,7 @@ function ToDoPage(props) {
     return (
       <>
       <AppBar/>
-      <Title>Render the uses to list</Title>
+      <Title>Render the users to list</Title>
       </>
     )
 }
