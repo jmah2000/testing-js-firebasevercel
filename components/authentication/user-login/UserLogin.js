@@ -17,15 +17,11 @@ function UserLogin ({...props}){
    
     async function handleSubmit(e){
         e.preventDefault()
-        const isValidUser = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
-        // const isValidUser = await signInWithEmailAndPassword(auth, email, password)
+        // const isValidUser = await signInWithEmailAndPassword(auth, "jim@home.com", "123456")
+        const isValidUser = await signInWithEmailAndPassword(auth, email, password)
 
-        console.log(email)
-        console.log(password)
-        console.log("isValidUser")
-        console.log(isValidUser)
-        console.log("auth")
-        console.log(auth)
+        console.log("UserLogin - user")
+        console.log(user)
 
         if(isValidUser)
         {
