@@ -10,6 +10,8 @@ function useAuth() {
     useEffect(()=>{
         // component mounts
         const authChange = onAuthStateChanged(auth, (clientCredential)=>{
+            console.log("clientCredential")
+            console.log(clientCredential)
             if(clientCredential)
             {
                 setUser(clientCredential)
