@@ -8,6 +8,7 @@ function useAuth() {
     const [user, setUser] = useState(null)
     
     useEffect(()=>{
+        // component mounts
         const authChange = onAuthStateChanged(auth, (clientCredential)=>{
             if(clientCredential)
             {
@@ -19,6 +20,7 @@ function useAuth() {
             }
         })
 
+        // component unmount
         return ()=> authChange()
 
     }, [])

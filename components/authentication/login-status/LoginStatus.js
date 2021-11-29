@@ -12,6 +12,7 @@ function UserLoginStatus({ size, color, status, ...props }) {
   // Conditional Render logged in
   const user = useAuth()
   const router = useRouter()
+
   // logout click handler
   function handleClick(){
     signOut(auth)
