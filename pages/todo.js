@@ -6,7 +6,8 @@ import {Title} from "ui/title"
 function ToDoPage(props) {
    
     const user = useAuth()
-
+    console.log('user')
+    console.log(user)
     if (!user)
     {
       return (
