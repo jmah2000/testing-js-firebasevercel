@@ -1,5 +1,6 @@
 import { AppBar } from "components/appbar"
 import { GoogleProvider } from "components/authentication/providers"
+import { GitHubProvider } from "components/authentication/providers"
 import { Title } from "ui/title"
 import { Spacer } from "ui/spacers"
 import {UserLogin} from "components/authentication/user-login"
