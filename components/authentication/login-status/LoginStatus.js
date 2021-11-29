@@ -17,7 +17,7 @@ function UserLoginStatus({ size, color, status, ...props }) {
     signOut(auth)
     .then(()=>{
       // sign out clean up logic
-      router.pathname('/')
+      router.push('/')
     })
 
   }

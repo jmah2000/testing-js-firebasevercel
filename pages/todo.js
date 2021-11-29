@@ -7,9 +7,6 @@ function ToDoPage(props) {
    
     const user = useAuth()
 
-    console.log("todo.js - user")
-    console.log(user)
-
     if (!user)
     {
       return (
