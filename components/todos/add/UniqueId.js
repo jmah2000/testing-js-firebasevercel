@@ -12,11 +12,11 @@ const ItemId = styled.div`
   }
 `;
  
- function UniqueId({label,...props}) {
+ function UniqueId({label, uid, ...props}) {
     return (
        <ItemId>
         <label htmlFor="uid">{label || "item id:"}</label>
-        <input type="text" disabled placeholder={"add uid here"} />
+        <input type="text" disabled placeholder={uid} />
       </ItemId>
     )
 }

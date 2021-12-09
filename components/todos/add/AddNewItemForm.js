@@ -3,13 +3,19 @@ import styled from 'styled-components';
 const AddItemForm = styled.form`
        margin: 2rem 0;
 `;
- function AddNewItemForm({children, ...props}) {
+ function AddNewItemForm({children, submitHandler, ...props}) {
     
     return (
-        <AddItemForm>
+        <AddItemForm onSubmit={(e)=> submitHandler(e)}>
             {children}
         </AddItemForm>
     )
 }
 
 export default AddNewItemForm
+
+
+// "Daisy chaining"
+// (e)=>(y)=>{
+//  return
+//}

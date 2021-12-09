@@ -13,11 +13,13 @@ const ItemDescription = styled.div`
        width:100%;
    }
 `; 
- function ItemTextArea ({...props}) {
+ function ItemTextArea ({changeHandler, ...props}) {
     return (
         <ItemDescription {...props}>
             <label htmlFor="description">Description</label>
-            <textarea placeholder="Add Your To Do Description Here"/>
+            <textarea 
+            onChange={(e)=> changeHandler(e)}
+            placeholder="Add Your To Do Description Here"/>
         </ItemDescription>
     )
 }
