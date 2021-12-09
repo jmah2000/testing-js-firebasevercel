@@ -14,6 +14,7 @@ function GitHubProvider({ children, ...props }) {
   const user = useAuth()
   const router = useRouter()
   const provider = new GithubAuthProvider()
+  
 
   async function signIn(){
     setIsValidUser(await signInWithPopup(auth,provider))
